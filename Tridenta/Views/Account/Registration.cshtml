@@ -1,0 +1,128 @@
+﻿@model Tridenta.Model.ViewModel.SignUpModel
+
+
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tridenta | The technology</title>
+
+    <!-- FontAwesome JS-->
+    <script src="~/assets/plugins/fontawesome/js/all.js"></script>
+    <script src="~/assets/plugins/fontawesome/js/all.min.js"></script>
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/script/Register.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <link href="~/css/site.css" rel="stylesheet" />
+
+
+
+    <!-- App CSS -->
+
+    <link id="theme-style" href="~/assets/css/portal.css" rel="stylesheet" />
+
+</head>
+
+<body class="app app-signup p-0">
+    <div class="row g-0 app-auth-wrapper">
+        <div class="col-12 col-md-7 col-lg-6 auth-main-col text-center p-5">
+            <div class="d-flex flex-column align-content-end">
+                <div class="app-auth-body mx-auto">
+                    <div class="app-auth-branding mb-4"><a class="app-logo"><img class="logo-icon me-2" src="assets/images/logoapp.png" alt="logo"></a></div>
+                    <h2 class="auth-heading text-center mb-4">Sign up to Atech</h2>
+
+                    <div class="auth-form-container text-start mx-auto">
+                        <form class="auth-form auth-signup-form" id="SignupFrm" asp-action="Registration" asp-controller="Account" method="post">
+                            <div class="email mb-3">
+
+                                <input asp-for="Name" type="text" id="name" name="name" class="form-control" placeholder="Full name">
+                                <span asp-validation-for="Name" id="vldname" class="text-danger"></span>
+                            </div>
+                            <div class="email mb-3">
+
+                                <input asp-for="Email" id="email" name="email" class="form-control" placeholder="Email">
+                                <span asp-validation-for="Email" id="vldemail" class="text-danger"></span>
+                            </div>
+                            <div class="email mb-3">
+
+                                <input asp-for="Phone" id="phone" name="phone" class="form-control" placeholder="Phone">
+                                <span asp-validation-for="Phone" id="vldphone" class="text-danger"></span>
+                            </div>
+
+                            <div class="password mb-3">
+
+                                <input asp-for="Password" type="password" name="password" id="password" class="form-control" placeholder="Create password">
+                                <span asp-validation-for="Password" id="vldpassword" class="text-danger"></span>
+                            </div>
+                            <div class="password mb-3">
+
+                                <input asp-for="ConfirmPassword" type="password" name="confirmpassword" id="confirmpassword" class="form-control" placeholder="Confirm password">
+                                <span asp-validation-for="ConfirmPassword" id="vldconfirmpassword" class="text-danger"></span>
+                            </div>
+                            <div class="password mb-3">
+                                <select asp-for="Gender" class="form-control" id="gender">
+                                    <option value="">Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+
+                                </select>
+                                <span asp-validation-for="Gender" id="vldgender" class="text-danger"></span>
+                            </div>
+                            <div class="extra mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="RememberPassword">
+                                    <label class="form-check-label" for="RememberPassword">
+                                        I agree to Portal's <a href="#" class="app-link">Terms of Service</a> and <a href="#" class="app-link">Privacy Policy</a>.
+                                    </label>
+                                </div>
+                            </div><!--//extra-->
+
+                            <div class="text-center">
+                                <button type="submit" onclick="ValidateFunction()" ; class="btn app-btn-primary w-100 theme-btn mx-auto">Sign Up</button>
+                            </div>
+                        </form><!--//auth-form-->
+
+                        <div class="auth-option text-center pt-5">Already have an account? <a class="text-link" asp-action="Login" asp-controller="Account">Log in</a></div>
+                    </div><!--//auth-form-container-->
+
+
+
+                </div><!--//auth-body-->
+
+                <footer class="app-auth-footer">
+                    <div class="container text-center py-3">
+                        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+                        <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by Tridenta | The technology</small>
+
+                    </div>
+                </footer><!--//app-auth-footer-->
+            </div><!--//flex-column-->
+        </div><!--//auth-main-col-->
+        <div class="col-12 col-md-5 col-lg-6 h-100 auth-background-col">
+            <div class="auth-background-holder">
+            </div>
+            <div class="auth-background-mask"></div>
+            @* <div class="auth-background-overlay p-3 p-lg-5">
+            <div class="d-flex flex-column align-content-end h-100">
+            <div class="h-100"></div>
+            <div class="overlay-content p-3 p-lg-4 rounded">
+            <h5 class="mb-3 overlay-title">Explore Portal Admin Template</h5>
+            <div>Portal is a free Bootstrap 5 admin dashboard template. You can download and view the template license <a href="https://themes.3rdwavemedia.com/bootstrap-templates/admin-dashboard/portal-free-bootstrap-admin-dashboard-template-for-developers/">here</a>.</div>
+            </div>
+            </div>
+            </div><!--//auth-background-overlay--> *@
+        </div><!--//auth-background-col-->
+
+    </div><!--//row-->
+
+
+</body>
+</html>

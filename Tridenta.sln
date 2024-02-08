@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tridenta", "Tridenta\Tridenta.csproj", "{BD77B3B6-1495-449F-81F8-BAD5834D6FBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tridenta.Model", "Tridenta.Model\Tridenta.Model.csproj", "{47316CB0-1DE2-46B1-89E5-9D57FC64B1B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tridenta.DAL", "Tridenta.DAL\Tridenta.DAL.csproj", "{99894E12-F196-485E-882D-C049A4DE594E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tridenta.BAL", "Tridenta.BAL\Tridenta.BAL.csproj", "{5E5A9928-6283-4F2C-AA4E-8297DC176A0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tridenta.Utility", "Tridenta.Utility\Tridenta.Utility.csproj", "{5105D6AB-C1F6-4BEE-8123-755FDC1EBA79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tridenta.API", "Tridenta.API\Tridenta.API.csproj", "{75AC7CC1-5D4D-453B-83F8-308E17A9CD56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD77B3B6-1495-449F-81F8-BAD5834D6FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD77B3B6-1495-449F-81F8-BAD5834D6FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD77B3B6-1495-449F-81F8-BAD5834D6FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD77B3B6-1495-449F-81F8-BAD5834D6FBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47316CB0-1DE2-46B1-89E5-9D57FC64B1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47316CB0-1DE2-46B1-89E5-9D57FC64B1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47316CB0-1DE2-46B1-89E5-9D57FC64B1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47316CB0-1DE2-46B1-89E5-9D57FC64B1B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99894E12-F196-485E-882D-C049A4DE594E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99894E12-F196-485E-882D-C049A4DE594E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99894E12-F196-485E-882D-C049A4DE594E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99894E12-F196-485E-882D-C049A4DE594E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E5A9928-6283-4F2C-AA4E-8297DC176A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E5A9928-6283-4F2C-AA4E-8297DC176A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E5A9928-6283-4F2C-AA4E-8297DC176A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E5A9928-6283-4F2C-AA4E-8297DC176A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5105D6AB-C1F6-4BEE-8123-755FDC1EBA79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5105D6AB-C1F6-4BEE-8123-755FDC1EBA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5105D6AB-C1F6-4BEE-8123-755FDC1EBA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5105D6AB-C1F6-4BEE-8123-755FDC1EBA79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75AC7CC1-5D4D-453B-83F8-308E17A9CD56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75AC7CC1-5D4D-453B-83F8-308E17A9CD56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75AC7CC1-5D4D-453B-83F8-308E17A9CD56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75AC7CC1-5D4D-453B-83F8-308E17A9CD56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF43A6D8-3BB3-4401-BED4-C97389761BE6}
+	EndGlobalSection
+EndGlobal
